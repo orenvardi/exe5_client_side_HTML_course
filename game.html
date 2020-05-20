@@ -1,0 +1,881 @@
+﻿<!--A Design by W3layouts
+   Author: W3layout
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
+<!DOCTYPE html>
+<html lang="zxx">
+<head onload="ShowBTN()">
+    <title>War of Thrones | Home :: </title>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="keywords" content="Dragon Hunt Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />-->
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+        //localStorage.clear();
+    </script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- //font-awesome icons -->
+    <!-- Nav-CSS -->
+    <link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/modernizr.custom.js"></script>
+    <!-- //Nav-CSS -->
+    <!-- banner -->
+    <link rel="stylesheet" type="text/css" href="css/uncover.css" />
+    <!--//banner -->
+    <!--stylesheets-->
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="//fonts.googleapis.com/css?family=Cinzel+Decorative:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/gotJsondata.js"></script>
+    <link href="css/WOT.css" rel='stylesheet' type='text/css' media="all">
+
+    <style>
+        @font-face {
+            font-family: game_of_thronesregular;
+            src: url('fonts/game_of_thrones-webfont.woff2') format('woff2'), url('fonts/game_of_thrones-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        div > .wot {
+            font-family: game_of_thronesregular;
+            color: white;
+            text-align: center;
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        }
+
+        .smtext {
+            font: 12px game_of_thronesregular;
+            color: white;
+            text-align: center;
+        }
+        .btn1 {
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            letter-spacing: 2px;
+            background-color: rgba(0, 0, 0, 0.41);
+            /* border-radius: 20px; */
+            outline: none;
+            margin-top: 27px;
+            padding: 10px 22px;
+            /*border: 4px double #9c8f8f;*/
+            box-shadow: 0px 0px 20px 5px rgb(0, 255, 255);
+        }
+
+            .btn1:hover {
+                background: rgba(255, 255, 255, 0.17);
+                color: #fff;
+            }
+        .btn2 {
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            letter-spacing: 2px;
+            background-color: rgba(0, 0, 0, 0.41);
+            /* border-radius: 20px; */
+            outline: none;
+            /*margin-top: 27px;*/
+            padding: 10px 22px;
+            /*border: 4px double #9c8f8f;*/
+            box-shadow: 0px 0px 20px 5px rgb(0, 255, 255);
+        }
+
+            .btn2:hover {
+                background: rgba(255, 255, 255, 0.17);
+                color: #fff;
+            }
+
+        #setup {
+            /*border-color: black;*/
+        }
+
+        .container-fluid {
+            background-image: url(images/got_bg.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /*#headerlogo {
+            padding: 0px;
+            margin: 0px;
+            font-size: 5px;
+        }*/
+
+        img, h3 > img {
+            height: 150px;
+            max-width: 200px;
+            max-width: 100%;
+            box-shadow: 0px 0px 20px 5px #FFFFFF;
+            border-radius: 25px;
+        }
+        #HiUser {
+            font-family: game_of_thronesregular;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+        }
+        #usernamelabel {
+            color: black;
+        }
+
+        #column {
+            box-shadow: 0px 40px 35px 0px #FFFFFF;
+        }
+        h3 {
+            text-decoration:underline;
+        }
+        /*#countdown {
+            color: #ffd800;
+            font-size: 48px;
+            padding: 5px;
+        }*/
+    </style>
+</head>
+<body onload="disableBTN(); season(); resetPoints(); randChar1(); randChar2(); randChar3(); randChar4(); showCards(); randCharRival1(); randCharRival2(); showRivals(); EnableSelectTeamBTN(); HiUser(); oldGamePoints(); start_timer(); ">
+    <audio autoplay>
+        <source src="mp3/Game%20of%20Thrones%20-%20Main%20Theme%20(Extended)%20HD.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container-fluid">
+        <div class="header-outs" id="home">
+            <div class="row">
+                <div class="col-sm-6" id="HiUser"></div>
+                <div class="col-sm-5">
+                    <div class="text-right">
+                        <button class="btn2" id="StartBTN" onclick="resetAllPoints(); cant_play(); stop_timer(); start_timer(); randChar1(); randChar2(); randChar3(); randChar4(); showCards(); randCharRival1(); randCharRival2(); showRivals(); EnableSelectTeamBTN(); HiUser()"> Start New Game </button>
+                    </div>
+                </div>
+                <div class="col-sm-6" id="enterUsername"></div>
+            </div>
+            <div class="header-w3layouts">
+                <div class="container">
+                    <div class="right-side">
+                        <p>
+                            <button id="trigger-overlay" type="button">
+                                <span class="fa fa-bars" aria-hidden="true"></span>
+                            </button>
+                        </p>
+                    </div>
+                    <!-- open/close -->
+                    <div class="overlay overlay-hugeinc">
+                        <button type="button" class="overlay-close">Close</button>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="War Rules.html">War Rules</a></li>
+                                <li><a href="game.html">Game</a></li>
+                                <!--<li><a href="hero.html">Avatar</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>-->
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--<div class="hedder-logo" id="headerlogo">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/logo_wot2.png" class="img-fluid" alt="Responsive image">
+                    </a>
+                </h1>
+            </div>-->
+                    <!-- /open/close -->
+                    <!-- /navigation section -->
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+
+            <h1 class="wot">War of Thrones</h1><br /><br />
+            <!--<button id="StartBTN" class="btn1" onclick="resetPoints(); randChar1(); randChar2(); randChar3(); randChar4(); showCards(); randCharRival1(); randCharRival2(); showRivals(); EnableSelectTeamBTN(); DisableStartGameBTN()">Start Playing</button>-->
+
+
+            <div>
+                <!--Start row div-->
+                <div class="row">
+
+                    <!--Start My team div-->
+                    <div id="column" class="col-sm-4">
+                        <div><h3 class="wot">Your Team Options:</h3><p class="smtext">choose 2 characters you want to goin you to the fight</p><br /></div>
+                        <div id="MyTeamCards" class="wot">
+                            <!--***********My Team cards shows here***********-->
+                        </div>
+                        <div class="text-center">
+
+                            <!--This is my Team! button-->
+                            <button class="btn1" id="selectTeamBTN" onclick="my_team(); EnableBTN(); clearInterval(downloadTimer)">This is my Team!</button>
+                        </div>
+                    </div>
+                    <!--End My team div-->
+                    <!--Start war div-->
+                    <div id="column" class="col-sm-4">
+                        <!--<div id="setup" class="text-center">-->
+                        <!--<div><h4 class="wot"> Game Settings </h4></div>-->
+                        <!--Start Game button-->
+                        <!--<button class="btn1" id="StartBTN" onclick="resetAllPoints(); randChar1(); randChar2(); randChar3(); randChar4(); showCards(); randCharRival1(); randCharRival2(); showRivals(); EnableSelectTeamBTN()"> Start New Game </button>-->
+                        <!--<button  class="btn1" id="instructions" onclick="ShowInstructions();">Show Instructions</button>-->
+                        <!--</div>-->
+
+                        <div class="text-center">
+                            <div id="countdown" class="btn2"></div><br /><br />
+                            <h4 class="wot" id="season"></h4><br />
+                            <h4 class="wot"> Game Points: </h4>
+                            <h4 class="wot" id="game_points"></h4><br />
+                            <h4 class="wot" id="result"></h4>
+                            <button class="btn1" id="AnotherWar" onclick="resetPoints(); cant_play(); stop_timer(); start_timer(); randChar1(); randChar2(); randChar3(); randChar4(); showCards(); randCharRival1(); randCharRival2(); showRivals(); EnableSelectTeamBTN(); HideResaulsText()"> Another War </button>
+
+                        </div>
+
+
+                        <div id="war" class="text-center">
+                            <!--<div><h4 class="wot">WAR SECTION</h4></div>-->
+                            <button class="btn1" id="fightBTN" onclick="CalPlayerPoints(player_team, rival_team); CalRivalPoints(rival_team, player_team); CalWhoWon_fight(); disableBTN();">Fight!</button>
+                            <button class="btn1" id="runBTN" onclick="CalPlayerPoints(player_team, rival_team); CalRivalPoints(rival_team, player_team); CalWhoWon_run(); disableBTN()">Run Away!</button>
+                            <div id="picOfWar"></div>
+
+                            <h6 class="wot">My Score</h6>
+                            <h4 class="wot" id="player_score"></h4>
+
+
+                            <h6 class="wot">Rival Score</h6>
+                            <h4 class="wot" id="rival_score"></h4>
+
+
+                        </div>
+                    </div>
+                    <!--End war div-->
+                    <!--Start Rivals div-->
+                    <div id="column" class="col-sm-4">
+                        <div><h3 class="wot">RIVARLS</h3><br /></div>
+
+                        <div id="rivalCards" class="wot">
+                            <!--*********rival cards shows here*************-->
+                        </div>
+
+                        <div>
+                            <!--Show my rivals button-->
+                            <!--<button onclick="randCharRival1(); randCharRival2(); showRivals()"> Show my rivals</button>-->
+                        </div>
+                    </div>
+                    <!--End Rivals div-->
+
+                </div>
+                <!--End row div-->
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--Footer -->
+    <footer class="py-lg-4 py-md-3 py-sm-3 py-3">
+        <div class="icons text-center p-3">
+            <ul>
+                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="fas fa-envelope"></span></a></li>
+                <li><a href="#"><span class="fas fa-rss"></span></a></li>
+                <li><a href="#"><span class="fab fa-vk"></span></a></li>
+            </ul>
+        </div>
+        <div class="footer-below text-center">
+            <p>�2019 War of Thrones. All Rights Reserved | Amir Kaplan | Tamir Aronade | Oren Vardi</p>
+        </div>
+    </footer>
+    <!-- //Footer -->
+    <!-- js working-->
+    <script src='js/jquery-2.2.3.min.js'></script>
+    <!--//js working-->
+    <!-- For-Banner -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/uncover.js"></script>
+    <script src="js/demo1.js"></script>
+    <!-- //For-Banner -->
+    <!--nav menu-->
+    <script src="js/classie.js"></script>
+    <script src="js/demonav.js"></script>
+    <!-- //nav menu-->
+    <!-- bootstrap working-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- // bootstrap working-->
+    <!--Start points script-->
+    <script>
+        player_team = [];
+        rival_team = [];
+        counter_player = 0;
+
+        arr = [];
+        //PV=Points Value
+        //
+        killedPV = 5;
+        guardedByPV = 3;
+        Killedby_True_PV = 4;
+        Killedby_false_PV = -4;
+        servedByPV = 3;
+        royalPV = 6;
+        compKilled = -30;
+
+        pointsArray = [];
+        pointsRivalArray = [];
+
+        //arrComp= competitior array (oren)
+        //arr = player array (tamir)
+        myPoints = 0;
+        rivalPoints = 0;
+        killedP1 = 0;
+        guardedByP1 = 0;
+        KilledbyP1 = 0;
+        servedByP1 = 0;
+        royalP1 = 0;
+        killedByCompP1 = 0;
+        points_for_win = 5;
+        points_for_lose = 7;
+
+        killedR1 = 0;
+        guardedByR1 = 0;
+        KilledbyR1 = 0;
+        servedByR1 = 0;
+        royalR1 = 0;
+        killedByCompR1 = 0;
+        gamePoints = 0;
+        gamePoints = localStorage.getItem("points");
+
+        pic = "";
+
+        picWinArr = ['', '<img src="gifs/PicWin1.gif"/>', '<img src="gifs/PicWin2.gif"/>', '<img src="gifs/PicWin3.gif"/>', '<img src="gifs/PicWin4.gif"/>'];
+        picLoseArr = ['', '<img src="gifs/PicLose1.gif"/>', '<img src="gifs/PicLose2.gif"/>', '<img src="gifs/PicLose3.gif"/>', '<img src="gifs/PicLose4.gif"/>'];
+        picTieArr = ['', '<img src="gifs/PicTie1.gif"/>', '<img src="gifs/PicTie2.gif"/>'];
+        picRunArr = ['', '<img src="gifs/PicRun2.gif"/>', '<img src="gifs/PicRun1.gif"/>'];
+
+        //Season (level) Poins
+        S1 = 5;
+        S2 = 10;
+        S3 = 15;
+        S4 = 20;
+        S_GameOver = -20;
+
+        function resetPoints() {
+            myPoints = 0;
+            rivalPoints = 0;
+            document.getElementById("player_score").innerHTML = myPoints;
+            document.getElementById("rival_score").innerHTML = rivalPoints;
+            document.getElementById("picOfWar").innerHTML = "";
+        }
+
+        function resetAllPoints() {
+            myPoints = 0;
+            rivalPoints = 0;
+            gamePoints = 0;
+            localStorage["points"] = 0;
+            localStorage["season"] = 0;
+            document.getElementById("player_score").innerHTML = '';
+            document.getElementById("rival_score").innerHTML = '';
+            document.getElementById("result").innerHTML = '';
+            document.getElementById("game_points").innerHTML = '';
+            document.getElementById("season").innerHTML = "";
+            document.getElementById("picOfWar").innerHTML = "";
+
+            player_team = [];
+            rival_team = [];
+        }
+
+        function CalPlayerPoints(arr, arrComp) {
+
+            for (i = 0; i < arr.length; i++) {
+                if (characters[arr[i]].killed != undefined) {
+                    //If the character killed someone
+                    killedP1 = characters[arr[i]].killed.length * killedPV;
+                }
+
+                if (characters[arr[i]].guardedBy != undefined) {
+                    //If the character has value in guardedBy
+                    guardedByP1 = guardedByPV * characters[arr[i]].guardedBy.length;
+                }
+
+                //If the character has value in Killedby
+                if (characters[arr[i]].Killedby != undefined) {
+                    KilledbyP1 = Killedby_True_PV;
+
+                }
+                else {
+                    KilledbyP1 = Killedby_false_PV;
+
+                }
+
+                if (characters[arr[i]].servedBy != undefined) {
+                    servedByP1 = characters[arr[i]].servedBy.length * servedByPV;
+                }
+
+                if (characters[arr[i]].royal) {
+
+                    royalP1 = royalPV;
+                }
+
+                if (characters[arr[i]].killedBy != undefined) {
+                    for (var j = 0; j < characters[arr[i]].killedBy.length; j++) {
+                        for (var k = 0; k < arrComp.length; k++) {
+                            for (var l; l < characters[arrComp[k]].killed; l++) {
+                                if (characters[arr[i]].killedBy == characters[arrComp[k]].killed) {
+                                    killedByCompP1 += compKilled;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                pointsArray[i] = killedP1 + guardedByP1 + KilledbyP1 + servedByP1 + royalP1 + killedByCompP1;
+
+            }
+            for (var i = 0; i < pointsArray.length; i++) {
+                myPoints += pointsArray[i];
+
+            }
+            document.getElementById("player_score").innerHTML = myPoints;
+
+        }
+
+        function CalRivalPoints(arr, playerArr) {
+
+
+
+            for (i = 0; i < arr.length; i++) {
+                if (characters[arr[i]].killed != undefined) {
+                    //If the character killed someone
+                    killedR1 = characters[arr[i]].killed.length * killedPV;
+                }
+
+                if (characters[arr[i]].guardedBy != undefined) {
+                    //If the character has value in guardedBy
+                    guardedByR1 = guardedByPV * characters[arr[i]].guardedBy.length;
+                }
+
+                //If the character has value in Killedby
+                if (characters[arr[i]].Killedby != undefined) {
+                    KilledbyR1 = Killedby_True_PV;
+                }
+                else {
+                    KilledbyR1 = Killedby_false_PV;
+
+                }
+
+                if (characters[arr[i]].servedBy != undefined) {
+                    servedByR1 = characters[arr[i]].servedBy.length * servedByPV;
+                }
+
+                if (characters[arr[i]].royal) {
+
+                    royalR1 = royalPV;
+                }
+
+                if (characters[arr[i]].killed != undefined) {
+                    for (var j = 0; j < characters[arr[i]].killed.length; j++) {
+                        for (var k = 0; k < playerArr.length; k++) {
+                            for (var l; l < characters[playerArr[k]].killedBy; l++) {
+                                if (characters[arr[i]].killed == characters[playerArr[k]].killedBy) {
+                                    killedByCompR1 += compKilled;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                pointsRivalArray[i] = killedR1 + guardedByR1 + KilledbyR1 + servedByR1 + royalR1 + killedByCompR1;
+
+            }
+            for (var i = 0; i < pointsArray.length; i++) {
+                rivalPoints += pointsRivalArray[i];
+
+            }
+            document.getElementById("rival_score").innerHTML = rivalPoints;
+
+        }
+
+        function CalWhoWon_fight() {
+            //res = 0;
+
+            if (rivalPoints > myPoints) {
+                //i lose
+                whoWon_text = localStorage.getItem("username") + ", You Lost The War!<br/> Tye again";
+                gamePoints -= points_for_lose;
+                //res = 2;
+
+            }
+            if (rivalPoints < myPoints) {
+                //i win
+                whoWon_text = localStorage.getItem("username") + ", You Won The War!";
+                gamePoints += points_for_win;
+                //res = 1;
+            }
+
+            if (rivalPoints == myPoints) {
+                whoWon_text = localStorage.getItem("username") + ", Its A Draw!";
+                //res =3 ;
+            }
+            localStorage["points"] = gamePoints;
+            document.getElementById("AnotherWar").style.visibility = 'visible';
+            document.getElementById("result").innerHTML = whoWon_text;
+            document.getElementById("game_points").innerHTML = gamePoints;
+            season();
+            //PicOfWAR(res);
+        }
+
+        function CalWhoWon_run() {
+            //picTag = 4;
+            //PicOfWAR(picTag);
+
+            if (rivalPoints > myPoints) {
+                //i lose
+                whoWon_text = "Good decision " + localStorage.getItem("username") + ",<br/> probably they could killed you all";
+            }
+            if (rivalPoints < myPoints) {
+                //i win
+                whoWon_text = "coward! You would have killed him!<br/> The Winter Is Comming!!!";
+                gamePoints -= points_for_win;
+            }
+
+
+            if (rivalPoints == myPoints) {
+                whoWon_text = localStorage.getItem("username") + ", Its A Draw!";
+            }
+            localStorage["points"] = gamePoints;
+            document.getElementById("AnotherWar").style.visibility = 'visible';
+            document.getElementById("result").innerHTML = whoWon_text;
+            document.getElementById("game_points").innerHTML = gamePoints;
+            season();
+
+        }
+
+        function disableBTN() {
+            document.getElementById("fightBTN").disabled = true;
+            document.getElementById("runBTN").disabled = true;
+            document.getElementById("selectTeamBTN").disabled = true;
+        }
+
+        function EnableBTN() {
+            document.getElementById("fightBTN").style.visibility = 'visible';
+            document.getElementById("runBTN").style.visibility = 'visible';
+            document.getElementById("AnotherWar").style.visibility = 'hidden';
+            document.getElementById("fightBTN").disabled = false;
+            document.getElementById("runBTN").disabled = false;
+        }
+        function EnableSelectTeamBTN() {
+            document.getElementById("selectTeamBTN").disabled = false;
+
+        }
+
+        function DisableAnotherWarBTN() {
+            document.getElementById("AnotherWar").disabled = true;
+        }
+        function DisableStartGameBTN() {
+            document.getElementById("StartBTN").disabled = true;
+            document.getElementById("AnotherWar").disabled = false;
+
+        }
+        function season() {
+            seasonV = "Season: #1";
+            if (gamePoints > S1) {
+                seasonV = "Season: #2";
+            }
+
+            if (gamePoints > S2) {
+                seasonV = "Season: #3";
+            }
+
+            if (gamePoints > S3) {
+                seasonV = "Season: #4";
+            }
+
+            if (gamePoints > S4) {
+                seasonV = localStorage.getItem("username") + " You Won The Game! Now you can sit on the Iron Throne";
+
+            }
+
+            if (gamePoints < S_GameOver) {
+                seasonV = localStorage.getItem("username") + " The Winter Is Here.<br/> You Lost"
+                document.getElementById("picOfWar").innerHTML = "<img src='gifs/PicGameOver.gif' />";
+                cant_play();
+
+            }
+            localStorage["season"] = seasonV;
+            document.getElementById("season").innerHTML = seasonV;
+
+        }
+
+        //function PicOfWAR(res) {
+
+        //    switch (res) {
+        //        case 1:   //win
+        //            {
+        //                pic = Math.floor((Math.random() * 3) + 1);
+        //                document.getElementById("picOfWar").innerHTML = picWinArr[pic];
+        //            }
+
+        //        case 2:   //lose
+        //            {
+        //                pic = Math.floor((Math.random() * 3) + 1);
+        //                document.getElementById("picOfWar").innerHTML = picLoseArr[pic];
+        //            }
+
+        //        case 3:   //tie
+        //            {
+        //                pic = Math.floor((Math.random() * 1) + 1);
+        //                document.getElementById("picOfWar").innerHTML = picTieArr[pic];
+        //            }
+
+        //        case 4:   //run
+        //            {
+        //                pic = Math.floor((Math.random() * 1) + 1);
+        //                document.getElementById("picOfWar").innerHTML = picRunArr[pic];
+        //            }
+
+        //            break;
+        //       // default: document.getElementById("picOfWar").innerHTML = '<img src="gifs/defPic.gif"/>';
+        //    }
+        //}
+
+        function HideResaulsText() {
+            text = "";
+            document.getElementById("result").innerHTML = text;
+        }
+
+        //function ShowInstructions() {
+        //    text = "The winter is coming!! You need to prepare to the big war, you are going to a long journey full of enemies and dangers. \n On each fight you need to choose 2 strong partners to fight with them against the enemy, or you can run away if you are thinking that your partners are too week.\n  Your partners and enemy are measured by: \n Number of people they killed during the series, number of people guarding them and the house they are coming from. \n If the character was killed along the series, she will get weaker and if she survives the series, she will be stronger. \n Notice! If your rival killed one of your partners on the series (or the opposite), he will kill him even in the battle!";
+        //    alert(text);
+        //}
+    </script>
+    <!--End points script-->
+    <!--Start My team script-->
+    <script>
+        player_team = [];
+        counter_player = 0;
+
+        // random card11
+        function randChar1() {
+            card11 = Math.floor(Math.random() * characters.length);
+
+            if (characters[card11].characterImageFull != null && ((characters[card11].houseName != "Lannister" && characters[card11].houseName != "Bolton" &&
+                characters[card11].houseName != "Greyjoy" && characters[card11].houseName != "Frey")) && (characters[card11].characterName != "White Walker" && characters[card11].characterName != "White Walker #2"
+                    && characters[card11].characterName != "Cersei Lannister" && characters[card11].characterName != "Walda Bolton")) {
+                characterName = "<h3> <img src = " + characters[card11].characterImageFull + "/>" + "</h3>";
+                characterName += "<input type='checkbox' id='" + 1 + "' value = 'name'>" + characters[card11].characterName;
+            }
+            else randChar1();
+        }
+
+        // random card22
+        function randChar2() {
+            card22 = Math.floor(Math.random() * characters.length);
+            var name = characters[card22].characterName;
+            if (characters[card22].characterImageFull != null && characters[card22].characterName != characters[card11].characterName
+                && ((characters[card22].houseName != "Lannister" && characters[card22].houseName != "Bolton" &&
+                    characters[card22].houseName != "Greyjoy" && characters[card22].houseName != "Frey")) && (characters[card22].characterName != "White Walker" && characters[card22].characterName != "White Walker #2"
+                        && characters[card22].characterName != "Cersei Lannister" && characters[card22].characterName != "Walda Bolton")) {
+                characterName += "<h3> <img src = " + characters[card22].characterImageFull + "/>" + "</h3>";
+                characterName += "<input type='checkbox' id='" + 2 + "' value = 'name'>" + characters[card22].characterName;
+            }
+            else randChar2();
+        }
+
+        // random card3
+        function randChar3() {
+            card3 = Math.floor(Math.random() * characters.length);
+            if (characters[card3].characterImageFull != null && characters[card3].characterName != characters[card11].characterName && characters[card3].characterName != characters[card22].characterName
+                && ((characters[card3].houseName != "Lannister" && characters[card3].houseName != "Bolton" &&
+                    characters[card3].houseName != "Greyjoy" && characters[card3].houseName != "Frey")) && (characters[card3].characterName != "White Walker" && characters[card3].characterName != "White Walker #2"
+                        && characters[card3].characterName != "Cersei Lannister" && characters[card3].characterName != "Walda Bolton")) {
+                characterName += "<h3> <img src = " + characters[card3].characterImageFull + "/>" + "</h3>";
+                characterName += "<input type='checkbox' id='" + 3 + "' value = 'name'>" + characters[card3].characterName;
+            }
+            else randChar3();
+        }
+
+        // random card4
+        function randChar4() {
+            card4 = Math.floor(Math.random() * characters.length);
+            if (characters[card4].characterImageFull != null && characters[card4].characterName != characters[card11].characterName && characters[card4].characterName != characters[card3].characterName
+                && ((characters[card4].houseName != "Lannister" && characters[card4].houseName != "Bolton" &&
+                    characters[card4].houseName != "Greyjoy" && characters[card4].houseName != "Frey")) && (characters[card4].characterName != "White Walker" && characters[card4].characterName != "White Walker #2"
+                        && characters[card4].characterName != "Cersei Lannister" && characters[card4].characterName != "Walda Bolton")) {
+                characterName += "<h3> <img src = " + characters[card4].characterImageFull + "/>" + "</h3>";
+                characterName += "<input type='checkbox' id='" + 4 + "' value = 'name'>" + characters[card4].characterName;
+            }
+            else randChar4();
+        }
+
+        function showCards() {
+            document.getElementById("MyTeamCards").innerHTML = characterName;
+        }
+
+        function my_team() {
+            counter_radio = 0;
+            //Check if the player pick 2 characters
+            if (document.getElementById('1').checked) {
+                counter_radio++;
+            }
+            if (document.getElementById('2').checked) {
+                counter_radio++;
+            }
+            if (document.getElementById('3').checked) {
+                counter_radio++;
+            }
+            if (document.getElementById('4').checked) {
+                counter_radio++;
+            }
+
+            if (counter_radio == 2) {
+                alert(localStorage.getItem("username") + " Your team is ready! Now you can choose rather to fight or run away")
+            }
+            if (counter_radio != 2) {
+                alert(localStorage.getItem("username") + " You must pick 2 Characters!")
+                return false;
+            }
+
+            // Enter the Charcters into array: player_team = [];
+            else {
+                if (document.getElementById('1').checked) {
+                    player_team[counter_player] = card11;
+                    counter_player++;
+                }
+                if (document.getElementById('2').checked) {
+                    player_team[counter_player] = card22;
+                    counter_player++;
+                }
+                if (document.getElementById('3').checked) {
+                    player_team[counter_player] = card3;
+                    counter_player++;
+                }
+                if (document.getElementById('4').checked) {
+                    player_team[counter_player] = card4;
+                }
+            }
+
+            return player_team;
+        }
+
+    </script>
+    <!--End My team script-->
+    <!--Start rivals script-->
+    <script>
+        // rival array team
+        rival_team = [];
+
+        //choose first random rival character
+        function randCharRival1() {
+            card1 = Math.floor(Math.random() * characters.length);
+            if (characters[card1].characterImageFull != null && (characters[card1].houseName != null && (characters[card1].houseName == "Lannister" || characters[card1].houseName == "Bolton" ||
+                characters[card1].houseName == "Greyjoy" || characters[card1].houseName == "Frey")) || (characters[card1].characterName == "White Walker" || characters[card1].characterName == "White Walker #2"
+                    || characters[card1].characterName == "Cersei Lannister" || characters[card1].characterName == "Walda Bolton")) {
+                characterName = "<div> <img src = " + characters[card1].characterImageFull + 'class="img-rounded"/>' + " <h5>" + characters[card1].characterName + "</h5> </div>";
+                rival_team.push(card1);
+            }
+            else randCharRival1();
+        }
+
+        //choose second random rival character
+        function randCharRival2() {
+            card2 = Math.floor(Math.random() * characters.length);
+            if (characters[card2].characterImageFull != null && characters[card2].characterName != characters[card1].characterName
+                && (characters[card2].houseName != null && (characters[card2].houseName == "Lannister" || characters[card2].houseName == "Bolton" ||
+                    characters[card2].houseName == "Greyjoy" || characters[card2].houseName == "Frey")) || (characters[card2].characterName == "White Walker" || characters[card2].characterName == "White Walker #2"
+                        || characters[card2].characterName == "Cersei Lannister" || characters[card2].characterName == "Walda Bolton")) {
+                characterName += "<div> <img src = " + characters[card2].characterImageFull + "/>" + " <h5>" + characters[card2].characterName + "</h5> </div>";
+                rival_team.push(card2);
+            }
+            else randCharRival2();
+        }
+
+        function showRivals() {
+            document.getElementById("rivalCards").innerHTML = characterName;
+        }
+    </script>
+    <!--End rivals script-->
+
+    <script>
+        function HiUser() {
+            if (localStorage["username"] != null) {
+                str = "Hi " + localStorage.getItem("username") + " good luck!";
+                document.getElementById("HiUser").innerHTML = str;
+            }
+            if (localStorage["username"] == null) {
+                str1 = "Hellow, please enter your username";
+                str2 = "<div id='username'><br /><br /><h6 class='wot'>Enter Your Name<input id='usernamelabel' name='username' type='text' placeholder='username' onkeyup='showcontinue()'/><br />" +
+                    "<button id='continue' class='btn2' style='visibility: hidden' onclick='saveUsername()'>continue</button></h6 ></div > ";
+                document.getElementById("HiUser").innerHTML = str1;
+                document.getElementById("enterUsername").innerHTML = str2;
+            }
+        }
+
+        function oldGamePoints() {
+            if (localStorage["points"] != null) {
+                gamePoints = localStorage.getItem("points");
+                document.getElementById("game_points").innerHTML = gamePoints;
+            }
+        }
+
+        function showcontinue() {
+            document.getElementById("continue").style.visibility = "visible";
+        }
+
+        function saveUsername() {
+            localStorage["username"] = document.getElementById("usernamelabel").value;
+            document.getElementById("enterUsername").innerHTML = '';
+            HiUser();
+        }
+
+        //Timer!!
+        function start_timer() {
+            var timeleft = 15;
+            downloadTimer = setInterval(function () {
+                document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+                timeleft -= 1;
+                if (timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    document.getElementById("AnotherWar").style.visibility = 'visible';
+                    rivalPoints += 5;
+                    CalWhoWon_fight();
+                    document.getElementById("countdown").innerHTML = localStorage.getItem("username") + " They killed you!! next time pick faster"
+                }
+            }, 1000);
+        }
+
+        function stop_timer() {
+            clearInterval(downloadTimer);
+            var timeleft = 10;
+        }
+
+        function cant_play() {
+            document.getElementById("fightBTN").style.visibility = 'hidden';
+            document.getElementById("runBTN").style.visibility = 'hidden';
+            document.getElementById("AnotherWar").style.visibility = 'hidden';
+        }
+    </script>
+
+</body>
+</html>
